@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>3D CSS cube</title>
+    <link rel="stylesheet" href="css/experiment.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/experiment.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script>
+        $(document).ready(function () {
+            windowResize();
+        });
+
+        $(window).resize(function () {
+            windowResize();
+        });
+
+        window.onorientationchange = function () {
+            windowResize();
+        };
+    </script>
+</head>
+<body class="body_content">
+    <div id="wrapper">
+        <!--Cube Code from here-->
+        <article class="viewport">
+            <section class="cube">
+                <div id="1st">
+                    <h1>Login</h1>
+                    <label for="txt_UseerName">Username</label>
+                    <input id="txt_UseerName" type="text" />
+                    <br />
+                    <label for="txt_Password">Password</label>
+                    <input id="txt_Password" type="password" />
+                    <br />
+                    <input id="btn_Submit" type="submit" value="Login" />
+                </div>
+                <div id="2nd">
+                    <h2>3D cube</h2>
+
+                    <p>3D cube built using css, webkit-perspective and webkit-transform. Rotation via webkit-transition.</p>
+                    <p>Use arrow keys to navigate, or click and hold mouse. On touch screens, use one finger to rotate. Press ESC to reset.</p>
+
+                </div>
+                <div id="3rd">
+                    First DIV
+                </div>
+                <div id="4th">
+                    <h2>Nothing</h2>
+                    <p>&#8220;A 3D cube can be created solely in CSS, with all six faces.&#8221;</p>
+
+                </div>
+                <div id="5th">
+                    <p>I design and build websites in Brighton</p>
+                </div>
+                <div id="6th">
+                    <small>Nothing down here.</small>
+                </div>
+            </section>
+        </article>
+    </div>
+
+</body>
+</html>
